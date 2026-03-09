@@ -26,7 +26,7 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Hi, I'm Arjay A. Charcos</h1>
-            <p>A Passionate Developer & System Administrator</p>
+            <p>A Passionate IT System Administrator and Developer</p>
             <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
@@ -39,14 +39,18 @@
         <div class="about-grid">
             <div class="about-text">
                 <h3>Who I Am</h3>
-                <p>I'm a full-stack developer with a passion for creating elegant solutions to complex problems. With expertise in modern web technologies, I build responsive, performant applications that users love.</p>
-                <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing knowledge with the community.</p>
+                <p>I am an IT enthusiast with a growing interest in IT system administration, focusing on maintaining reliable systems, supporting network operations, and ensuring the smooth operation of organizational IT infrastructure.</p>
+
+                <p>In addition to system administration, I also have experience in mobile and web development. This background allows me to understand systems more deeply and create practical solutions that improve efficiency and workflow.</p>
                 
                 <h3 style="margin-top: 2rem;">My Journey</h3>
-                <p>Started my career with a passion for web development and have since grown into a full-stack expert. I believe in continuous learning and staying up-to-date with the latest technologies and best practices.</p>
-
+                <p>I began my career as an Information System Staff, handling responsibilities similar to an IT System Administrator by maintaining systems and supporting technical operations. I later expanded my skills into mobile and web development, while also building strong communication skills through working with customers and stakeholders.</p>
+                
                 <h3 style="margin-top: 2rem;">Technical Skills</h3>
                 <div class="skills">
+                    <span class="skill-tag">Network Configuration</span>
+                    <span class="skill-tag">Hardware and Software Support</span>
+                    <span class="skill-tag">Firewall Policy Support</span>
                     <span class="skill-tag">PHP Laravel</span>
                     <span class="skill-tag">React</span>
                     <span class="skill-tag">CSS/HTML</span>
@@ -54,7 +58,6 @@
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">SQL</span>
                     <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Back-End Developer</span>
                 </div>
 
                 <h3 style="margin-top: 2rem;">Other Skills</h3>
@@ -76,76 +79,82 @@
         <div class="projects-container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+                <!-- Network and Firewall - Image Slideshow -->
                 <div class="project-card">
-                    <div class="project-icon">🚀</div>
-                    <h3>Project One</h3>
+                    <div class="project-icon">🛜</div>
+                    <h3>Network and Firewall Policy Update</h3>
+                    <p>Comprehensive network infrastructure setup with advanced firewall configurations, security policies, and network optimization for enterprise environments.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Network Admin</span>
+                        <span class="project-tag">Firewall</span>
+                        <span class="project-tag">Security</span>
+                    </div>
+                    <a href="#" class="project-link" onclick="openImageSlideshow(event, ['resources/network/ns.jpg', 'resources/network/un.jpg', 'resources/network/ap.jpg', 'resources/network/fp.jpg'], ['Network Setup', 'UniFi Configuration', 'Access Point Installation', 'Policy Update'], 'Network and Firewall Policy Update')">View Work →</a>
+                </div>
+
+                <!-- U-Find - Video -->
+                <div class="project-card">
+                    <div class="project-icon">🔎</div>
+                    <h3>U-Find</h3>
                     <p>A high-performance web application built with React and Node.js. Features real-time data sync and modern UI patterns.</p>
                     <div class="project-tags">
-                        <span class="project-tag">React</span>
-                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Mobile</span>
                         <span class="project-tag">MongoDB</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
+                    <a href="#" class="project-link" onclick="openVideoModal(event, 'https://drive.google.com/file/d/1cfQnRJ3yTf0ePirP0XWxxtP7V5ScCT2i/preview', 'U-Find Demo')">View Preview →</a>
                 </div>
 
+                <!-- Treense - Video -->
                 <div class="project-card">
-                    <div class="project-icon">🎨</div>
-                    <h3>Project Two</h3>
+                    <div class="project-icon">🌳</div>
+                    <h3>Treense</h3>
                     <p>A design-forward mobile application with smooth animations and intuitive interactions. Focused on user experience.</p>
                     <div class="project-tags">
-                        <span class="project-tag">Vue.js</span>
-                        <span class="project-tag">Tailwind</span>
-                        <span class="project-tag">Mobile</span>
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Dart</span>
+                        <span class="project-tag">Machine Learning</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
+                    <a href="#" class="project-link" onclick="openVideoModal(event, 'https://drive.google.com/file/d/1cjdkfNtiel5yJK5eSvXgEhs2EBHmr8-4/preview', 'Treense Demo')">View Preview →</a>
                 </div>
 
+                <!-- BrightPath - Video -->
                 <div class="project-card">
-                    <div class="project-icon">⚡</div>
-                    <h3>Project Three</h3>
+                    <div class="project-icon">👶</div>
+                    <h3>BrightPath</h3>
                     <p>A lightning-fast static site generator built with cutting-edge tools. Optimized for performance and developer experience.</p>
                     <div class="project-tags">
                         <span class="project-tag">Next.js</span>
                         <span class="project-tag">TypeScript</span>
                         <span class="project-tag">Performance</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
+                    <a href="#" class="project-link" onclick="openVideoModal(event, 'https://drive.google.com/file/d/1cyOeLLv3YpltDjSKcLo5TxvgAMwWOvRk/preview', 'BrightPath Demo')">View Preview →</a>
                 </div>
 
+                <!-- SETUP IMS - Image Slideshow -->
                 <div class="project-card">
-                    <div class="project-icon">📱</div>
-                    <h3>Project Four</h3>
-                    <p>A comprehensive task management platform with collaborative features and real-time updates across all devices.</p>
+                    <div class="project-icon">📋</div>
+                    <h3>SETUP Information Management System</h3>
+                    <p>A comprehensive task management platform with collaborative features, real-time updates, and seamless integration across web and mobile devices for enhanced productivity.</p>
                     <div class="project-tags">
                         <span class="project-tag">React Native</span>
                         <span class="project-tag">Firebase</span>
                         <span class="project-tag">Web</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
+                    <a href="#" class="project-link" onclick="openImageSlideshow(event, ['resources/setup-ims/setup-1.jpg', 'resources/setup-ims/setup-2.jpg', 'resources/setup-ims/setup-3.jpg', 'resources/setup-ims/setup-4.jpg'], ['Dashboard', 'Task Management', 'User Interface', 'Collaboration'], 'SETUP Information Management System')">View Project →</a>
                 </div>
 
+                <!-- SETUP GPS MAP - Image Slideshow -->
                 <div class="project-card">
-                    <div class="project-icon">🤖</div>
-                    <h3>Project Five</h3>
-                    <p>An AI-powered recommendation engine that learns user preferences and suggests personalized content in real-time.</p>
+                    <div class="project-icon">🗺️</div>
+                    <h3>SETUP GPS MAP</h3>
+                    <p>An intelligent location-based service with real-time GPS tracking, advanced mapping features, and AI-powered analytics for comprehensive geographical data visualization and management.</p>
                     <div class="project-tags">
                         <span class="project-tag">Python</span>
                         <span class="project-tag">Machine Learning</span>
                         <span class="project-tag">API</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">🎵</div>
-                    <h3>Project Six</h3>
-                    <p>A streaming music platform with playlist management, social features, and high-fidelity audio streaming capabilities.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Angular</span>
-                        <span class="project-tag">WebSocket</span>
-                        <span class="project-tag">AWS</span>
-                    </div>
-                    <a href="#" class="project-link">View Project →</a>
+                    <a href="#" class="project-link" onclick="openImageSlideshow(event, ['resources/setup-gps/gps-1.jpg', 'resources/setup-gps/gps-2.jpg', 'resources/setup-gps/gps-3.jpg'], ['Map Overview', 'Location Tracking', 'Analytics'], 'SETUP GPS MAP')">View Project →</a>
                 </div>
             </div>
         </div>
@@ -190,6 +199,47 @@
     <footer>
         <p>&copy; 2026 Your Name. All rights reserved.</p>
     </footer>
+
+    <!-- ========================
+         VIDEO MODAL
+         ======================== -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-content">
+            <button class="close-video" onclick="closeVideoModal()" aria-label="Close video">×</button>
+            <h3 id="videoTitle" class="video-title"></h3>
+            <iframe 
+                id="videoFrame"
+                width="100%" 
+                height="450"
+                allow="autoplay"
+                frameborder="0">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- ========================
+         IMAGE SLIDESHOW MODAL
+         ======================== -->
+    <div id="slideshowModal" class="slideshow-modal">
+        <div class="slideshow-content">
+            <button class="close-slideshow" onclick="closeSlideshowModal()" aria-label="Close slideshow">×</button>
+            <h3 id="slideshowTitle" class="slideshow-title"></h3>
+            
+            <div class="slideshow-container">
+                <img id="slideshowImage" src="" alt="Slideshow image" class="slideshow-image">
+                
+                <div class="slideshow-controls">
+                    <button class="slide-btn prev-btn" onclick="previousSlide()">❮</button>
+                    <span id="imageName" class="image-name"></span>
+                    <button class="slide-btn next-btn" onclick="nextSlide()">❯</button>
+                </div>
+
+                <div class="slideshow-dots">
+                    <div id="dotsContainer" class="dots-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
