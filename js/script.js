@@ -23,7 +23,7 @@ function openVideoModal(event, videoUrl, videoTitle) {
     
     // Show modal
     modal.classList.add("active");
-    document.body.style.overflow = "hidden"; // Prevent background scroll
+    document.body.style.overflow = "hidden";
 }
 
 function closeVideoModal() {
@@ -35,7 +35,7 @@ function closeVideoModal() {
     
     // Clear video source to stop playback
     frame.src = "";
-    document.body.style.overflow = "auto"; // Re-enable background scroll
+    document.body.style.overflow = "auto";
 }
 
 /* ========================
@@ -137,6 +137,33 @@ function updateDots(activeIndex) {
 }
 
 /* ========================
+   Email Modal Management
+   ======================== */
+
+function openEmailModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById("emailModal");
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+
+function closeEmailModal() {
+    const modal = document.getElementById("emailModal");
+    modal.classList.remove("active");
+    document.body.style.overflow = "auto";
+    document.getElementById("emailSubject").value = "";
+    document.getElementById("emailBody").value = "";
+}
+
+function sendViaGmail() {
+    const subject = encodeURIComponent(document.getElementById("emailSubject").value);
+    const body = encodeURIComponent(document.getElementById("emailBody").value);
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&to=arjay.charcos25@gmail.com&su=${subject}&body=${body}`;
+    window.open(gmailUrl, "_blank");
+    closeEmailModal();
+}
+
+/* ========================
    Modal Event Listeners
    ======================== */
 
@@ -162,12 +189,21 @@ function setupModalListeners() {
             closeSlideshowModal();
         }
     });
+
+    // Email modal click outside to close
+    const emailModal = document.getElementById("emailModal");
+    emailModal.addEventListener("click", function(event) {
+        if (event.target === emailModal) {
+            closeEmailModal();
+        }
+    });
     
     // Close modals on Escape key
     document.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
             closeVideoModal();
             closeSlideshowModal();
+            closeEmailModal();
         }
     });
     

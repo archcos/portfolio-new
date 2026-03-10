@@ -39,10 +39,10 @@
         <div class="about-grid">
             <div class="about-text">
                 <h3>Who I Am</h3>
-                <p>I am an IT enthusiast with an interest in IT System Administration, focusing on maintaining reliable systems, supporting network operations, and ensuring the smooth operation of organizational IT infrastructure.</p>
+                <p>I am Arjay A. Charcos, a Bachelor of Science in Information Technology graduate from University of Science and Technology of Southern Philippines. I am an IT enthusiast with an interest in IT System Administration, focusing on maintaining reliable systems, supporting network operations, and ensuring the smooth operation of organizational IT infrastructure.</p>
 
                 <p>In addition to system administration, I also have experience in mobile and web development. This background allows me to understand systems more deeply and create practical solutions that improve efficiency and workflow.</p>
-                
+
                 <h3 style="margin-top: 2rem;">My Journey</h3>
                 <p>I began my career as an Information System Staff, handling responsibilities similar to an IT System Administrator by maintaining systems and supporting technical operations. I later expanded my skills into mobile and web development, while also building strong communication skills through working with customers and stakeholders.</p>
                 
@@ -145,7 +145,7 @@
                         <span class="project-tag">Firebase</span>
                         <span class="project-tag">Web</span>
                     </div>
-                    <a href="#" class="project-link" onclick="openImageSlideshow(event, ['resources/setup-ims/setup-1.jpg', 'resources/setup-ims/setup-2.jpg', 'resources/setup-ims/setup-3.jpg', 'resources/setup-ims/setup-4.jpg'], ['Dashboard', 'Task Management', 'User Interface', 'Collaboration'], 'SETUP Information Management System')">View Project →</a>
+                    <a href="#" class="project-link" onclick="openImageSlideshow(event, ['resources/stp/Login.png','resources/stp/registration.png','resources/stp/dashboard.png','resources/stp/dbblack.png'], ['Login Page', 'Registration Page', 'Dashboard', 'Dashboard-Dark Theme'], 'SETUP Information Management System')">View Project →</a>
                 </div>
 
                 <!-- SETUP GPS MAP - Image Slideshow -->
@@ -158,7 +158,7 @@
                         <span class="project-tag">Machine Learning</span>
                         <span class="project-tag">API</span>
                     </div>
-                    <a href="#" class="project-link" onclick="openImageSlideshow(event, ['resources/setup-gps/gps-1.jpg', 'resources/setup-gps/gps-2.jpg', 'resources/setup-gps/gps-3.jpg'], ['Map Overview', 'Location Tracking', 'Analytics'], 'SETUP GPS MAP')">View Project →</a>
+                    <a href="#" class="project-link" onclick="openImageSlideshow(event, ['resources/map/home.png','resources/map/map.png','resources/map/data.png','resources/map/equipment.png'], ['Home', 'Map', 'Map Data', 'Equipment Management'], 'SETUP GPS MAP')">View Project →</a>
                 </div>
             </div>
         </div>
@@ -182,20 +182,49 @@
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.824 0-9.744h3.554v1.378c.43-.664 1.199-1.608 2.928-1.608 2.136 0 3.745 1.398 3.745 4.401v5.573zM5.337 9.432c-1.144 0-1.915-.758-1.915-1.707 0-.957.77-1.708 1.963-1.708 1.193 0 1.915.751 1.929 1.708 0 .949-.736 1.707-1.977 1.707zm1.582 11.02H3.715V8.708h3.204v11.744zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
             </a>
-            <a href="mailto:arjay.charcos25@gmail.com" class="social-link" title="Email">
+            <a href="#"  onclick="openEmailModal(event)" class="social-link" title="Email">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
             </a>
         </div>
 
-        <a href="mailto:arjay.charcos25@gmail.com" class="cta-button">Send Me an Email</a>
-
-        <div style="margin-top: 3rem; padding: 2rem; background: rgba(0, 217, 255, 0.05); border-radius: 15px; border: 1px solid rgba(0, 217, 255, 0.1);">
-            <h3 style="color: var(--primary); margin-bottom: 1rem;">Contact Info</h3>
-            <p>Email: <a href="mailto:arjay.charcos25@gmail.com" style="color: var(--primary); text-decoration: none;">arjay.charcos25@gmail.com</a></p>
-            <p>Location: Opol, Misamis Oriental, Philippines</p>
+        <a href="#" class="cta-button" onclick="openEmailModal(event)">Send Me an Email</a>
+<div style="margin-top: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+    
+    <!-- Email Card -->
+    <div onclick="openEmailModal(event)" style="padding: 1.5rem; background: rgba(0, 217, 255, 0.05); border-radius: 15px; border: 1px solid rgba(0, 217, 255, 0.15); cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 1rem; text-decoration: none;"
+        onmouseover="this.style.background='rgba(0,217,255,0.12)'; this.style.transform='translateY(-3px)'; this.style.borderColor='rgba(0,217,255,0.4)'"
+        onmouseout="this.style.background='rgba(0,217,255,0.05)'; this.style.transform='translateY(0)'; this.style.borderColor='rgba(0,217,255,0.15)'">
+        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, rgba(0,217,255,0.2), rgba(131,56,236,0.2)); border: 1px solid rgba(0,217,255,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00d9ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
         </div>
+        <div>
+            <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-bottom: 0.2rem; text-transform: uppercase; letter-spacing: 1px;">Email</p>
+            <p style="color: #00d9ff; font-size: 0.9rem; font-weight: 500;">arjay.charcos25@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- Location Card -->
+    <div style="padding: 1.5rem; background: rgba(131, 56, 236, 0.05); border-radius: 15px; border: 1px solid rgba(131, 56, 236, 0.15); display: flex; align-items: center; gap: 1rem; transition: all 0.3s ease;"
+        onmouseover="this.style.background='rgba(131,56,236,0.12)'; this.style.transform='translateY(-3px)'; this.style.borderColor='rgba(131,56,236,0.4)'"
+        onmouseout="this.style.background='rgba(131,56,236,0.05)'; this.style.transform='translateY(0)'; this.style.borderColor='rgba(131,56,236,0.15)'">
+        <div style="width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, rgba(131,56,236,0.2), rgba(255,0,110,0.2)); border: 1px solid rgba(131,56,236,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8338ec" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+            </svg>
+        </div>
+        <div>
+            <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-bottom: 0.2rem; text-transform: uppercase; letter-spacing: 1px;">Location</p>
+            <p style="color: #8338ec; font-size: 0.9rem; font-weight: 500;">Opol, Misamis Oriental, PH</p>
+        </div>
+    </div>
+
+</div>
     </section>
 
     <!-- Footer -->
@@ -240,6 +269,18 @@
                 <div class="slideshow-dots">
                     <div id="dotsContainer" class="dots-container"></div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- EMAIL MODAL -->
+    <div id="emailModal" class="video-modal">
+        <div class="video-content" style="max-width: 500px;">
+            <button class="close-video" onclick="closeEmailModal()" aria-label="Close">×</button>
+            <h3 class="video-title">Send Me an Email</h3>
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+                <input type="text" id="emailSubject" placeholder="Subject" style="padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid rgba(0,217,255,0.3); background: rgba(0,217,255,0.05); color: white; font-size: 1rem; outline: none;">
+                <textarea id="emailBody" placeholder="Your message..." rows="5" style="padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid rgba(0,217,255,0.3); background: rgba(0,217,255,0.05); color: white; font-size: 1rem; outline: none; resize: vertical;"></textarea>
+                <button onclick="sendViaGmail()" class="cta-button" style="margin: 0; text-align: center;">Open in Gmail →</button>
             </div>
         </div>
     </div>
